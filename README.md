@@ -42,7 +42,7 @@ Import the module and configure the service in your Home Manager configuration:
       # This handles absolute paths automatically
       "nixos-mcp" = {
         transport = "stdio";
-        command = pkgs.mcp-nixos;
+        command = "${pkgs.mcp-nixos}/bin/mcp-nixos";
         tags = [ "nixos" "system" ];
       };
 
